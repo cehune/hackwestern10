@@ -39,7 +39,7 @@
         android:layout_marginStart="7dp"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="7dp"
-        
+
         android:layout_marginBottom="7dp"
         android:queryHint="Search Dog Brand"
         android:iconifiedByDefault="false"/>

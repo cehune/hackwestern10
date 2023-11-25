@@ -23,11 +23,11 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Golden Retriever"
-            android:textStyle="bold"
-            android:textSize="30sp"
             android:layout_gravity="center"
-            android:textColor="@color/black"/>
+            android:text="Golden Retriever"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -35,64 +35,132 @@
             app:cardCornerRadius="10dp"
             android:layout_marginTop="20dp">
 
-            <LinearLayout
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="243dp"
+                android:layout_height="213dp"
                 android:layout_marginTop="0dp"
-                android:orientation="vertical"
-                android:padding="15dp">
+                android:padding="12dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="145dp"
+                    android:layout_height="131dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="239dp"
+                    android:layout_marginBottom="40dp"
+                    app:srcCompat="@drawable/img" />
 
 
-                <!-- Height TextView -->
-
-                <!-- Weight TextView -->
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textHeightTitle"
+                    android:layout_width="111dp"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="115dp"
                     android:text="Height"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/textHeightMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="27dp"
+                    android:layout_marginEnd="66dp"
+                    android:text="Male: 23-24 inches" />
+
+                <TextView
+                    android:id="@+id/textHeightFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textHeightMale"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="27dp"
+                    android:text="Female: 21.5-22.5 inches" />
+
+                <!-- Display weight information -->
+
+                <TextView
+                    android:id="@+id/textWeightTitle"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textHeightFemale"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="149dp"
                     android:text="Weight"
-                    android:textSize="13sp" />
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="65-75 pounds (male)\n55-65 pounds (female)"
-                    android:textSize="10sp" />
-
-                <!-- Life Expectancy TextView -->
-
-                <com.google.android.material.imageview.ShapeableImageView
-                    android:layout_width="352dp"
-                    android:layout_height="203dp"
-
-                    android:src="@drawable/img" />
+                    android:id="@+id/textWeightMale"
+                    android:layout_width="147dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/textWeightTitle"
+                    android:layout_alignBottom="@+id/imageView4"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="-1dp"
+                    android:layout_marginEnd="33dp"
+                    android:layout_marginBottom="23dp"
+                    android:text="Male: 65-75 pounds" />
 
                 <TextView
+                    android:id="@+id/textWeightFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="42dp"
+                    android:layout_marginBottom="52dp"
+                    android:text="Female: 55-65 pounds" />
+
+                <!-- Display life expectancy information -->
+
+                <TextView
+                    android:id="@+id/textLifeExpectancyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="95dp"
+                    android:layout_marginBottom="21dp"
                     android:text="Life Expectancy"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/textLifeExpectancy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="10-12 years"
-                    android:textSize="16sp" />
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="168dp"
+                    android:layout_marginEnd="105dp"
+                    android:text="10-12 years" />
 
 
-            </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
 
         </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="211dp"
+            android:text="TextView" />
 
     </LinearLayout>
 
