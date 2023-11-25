@@ -39,7 +39,7 @@ public class DogInf_1 extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                open_MainActivity2();
+                open_MainActivity2("golden_retriever");
             }
 
         });
@@ -81,9 +81,11 @@ public class DogInf_1 extends AppCompatActivity {
 
     }
 
-    public void open_MainActivity2() {
+    public void open_MainActivity2(String key) {
             Intent intent1 = new Intent(this, DogInf_2.class);
+            intent1.putExtra("breed", key);
             startActivity(intent1);
+
 
         }
 
