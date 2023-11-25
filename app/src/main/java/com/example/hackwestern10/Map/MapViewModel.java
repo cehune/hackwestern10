@@ -24,11 +24,20 @@ public class MapViewModel extends AndroidViewModel {
         super(application);
         this.userDatabase = UserProfileDatabase.getInstance(application);
         this.dao = userDatabase.userProfileDao();
+        //UserProfile yib = new UserProfile("aa", "aa", 1.222, 2.22, R.drawable.pfp2, "aa", "asdf");
+        //this.dao.insert(yib);
         retrieveNearbyUsersFromDB();
+        System.out.println("bin");
     }
     private void retrieveNearbyUsersFromDB(){
         Executor executor = Executors.newSingleThreadExecutor();
         executor.execute(() -> nearbyUsers = dao.getUsers());
+    }
+
+    private void insert() {
+        Executor executor = Executors.newSingleThreadExecutor();
+        executor.execute(() -> dao.insert(new UserProfile("aa", "aa", 1.222, 2.22, R.drawable.pfp2, "aa", "asdf")));
+
     }
     public List<UserProfile> getNearbyUsers() {
         return nearbyUsers;

@@ -19,7 +19,7 @@ public abstract class UserProfileDatabase extends RoomDatabase {
         if (instance == null) {
             instance = Room.databaseBuilder(context.getApplicationContext(),
                     UserProfileDatabase.class, "database-name").fallbackToDestructiveMigration().build();
-        }
+        } // .allowMainThreadQueries()
         return instance;
     }
 
