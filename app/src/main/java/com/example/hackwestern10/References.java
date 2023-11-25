@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
 
 public class References extends AppCompatActivity {
@@ -15,5 +16,11 @@ public class References extends AppCompatActivity {
 
         TextView textview = findViewById(R.id.ReferencesText);
         textview.setPaintFlags(textview.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
+
+        TextView petpoisoncontrol = findViewById(R.id.PetPoisonControl);
+        petpoisoncontrol.setMovementMethod(LinkMovementMethod.getInstance());
+
+
+
     }
 }
