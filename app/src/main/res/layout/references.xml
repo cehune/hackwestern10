@@ -29,6 +29,16 @@
         android:layout_centerHorizontal="false" />
 
     <TextView
+        android:id="@+id/ReferencesTrainingBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet Training Resources"
+        android:layout_below="@+id/FinancialHelpVet"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="false" />
+
+    <TextView
         android:id="@+id/ReferencesFinancialBanner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,6 +74,16 @@
         android:layout_height="wrap_content"
         android:text="@string/financialhelpvet"
         android:layout_below="@+id/ReferencesFinancialBanner"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="false" />
+
+    <TextView
+        android:id="@+id/PottyTrainingGuide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pottytrainingguide"
+        android:layout_below="@+id/ReferencesTrainingBanner"
         android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="false" />
