@@ -39,10 +39,6 @@ public class UserProfile {
         this.dogBreed = dogBreed;
     }
 
-    public void setUid(int uid) {
-        this.uid = uid;
-    }
-
     /*
     Getters
     */

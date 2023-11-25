@@ -55,7 +55,7 @@ public class MapFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.map_recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(requireActivity()));
         recyclerView.setHasFixedSize(true);
-        List<UserProfile> bin = viewModel.getNearbyUsers(2);
+        List<UserProfile> bin = viewModel.getNearbyUsers();
         MapUserCardAdapter mapUserCardAdapter = new MapUserCardAdapter();
         mapUserCardAdapter.setUserProfileList(bin);
         recyclerView.setAdapter(mapUserCardAdapter);

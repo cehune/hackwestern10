@@ -12,6 +12,7 @@ import com.example.hackwestern10.database.UserProfileDao;
 import com.example.hackwestern10.database.UserProfileDatabase;
 
 import java.util.List;
+import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -23,10 +24,13 @@ public class MapViewModel extends AndroidViewModel {
         super(application);
         this.userDatabase = UserProfileDatabase.getInstance(application);
         this.dao = userDatabase.userProfileDao();
-        this.nearbyUsers = dao.getUsers();
+        retrieveNearbyUsersFromDB();
     }
-    public List<UserProfile> getNearbyUsers(int radius) {
-       return nearbyUsers;
+    private void retrieveNearbyUsersFromDB(){
+        Executor executor = Executors.newSingleThreadExecutor();
+        executor.execute(() -> nearbyUsers = dao.getUsers());
     }
-
+    public List<UserProfile> getNearbyUsers() {
+        return nearbyUsers;
+    }
 }
