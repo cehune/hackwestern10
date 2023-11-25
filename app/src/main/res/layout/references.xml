@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
+    android:background="##ede9e8"
     tools:context=".References">
 
     <TextView
@@ -53,6 +54,16 @@
         android:layout_height="wrap_content"
         android:text="@string/petfirstaid"
         android:layout_below="@+id/PetPoisonControl"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="false" />
+
+    <TextView
+        android:id="@+id/FinancialHelpVet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/financialhelpvet"
+        android:layout_below="@+id/ReferencesFinancialBanner"
         android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="false" />
