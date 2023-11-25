@@ -18,7 +18,15 @@ public class References extends AppCompatActivity {
         textview.setPaintFlags(textview.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
         TextView petpoisoncontrol = findViewById(R.id.PetPoisonControl);
+        TextView petfirstaid = findViewById(R.id.PetFirstAid);
+        TextView financialhelpvet = findViewById(R.id.FinancialHelpVet);
+        TextView pottytrainingguide = findViewById(R.id.PottyTrainingGuide);
+
+
         petpoisoncontrol.setMovementMethod(LinkMovementMethod.getInstance());
+        petfirstaid.setMovementMethod(LinkMovementMethod.getInstance());
+        financialhelpvet.setMovementMethod(LinkMovementMethod.getInstance());
+        pottytrainingguide.setMovementMethod(LinkMovementMethod.getInstance());
 
 
 
