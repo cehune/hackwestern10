@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    tools:context=".References">
+
+    <TextView
+        android:id="@+id/ReferencesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="References"
+        android:textSize="30sp"
+        android:layout_marginTop="50dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/ReferencesMedicalBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Medical Emergencies"
+        android:layout_below="@+id/ReferencesText"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="false" />
+
+    <TextView
+        android:id="@+id/PetPoisonControl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/petpoisoncontrol"
+        android:layout_below="@+id/ReferencesMedicalBanner"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="false" />
+
+
+
+</RelativeLayout>
