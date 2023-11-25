@@ -144,23 +144,83 @@
                     android:text="10-12 years" />
 
 
-            </RelativeLayout>
+                </RelativeLayout>
 
+                </com.google.android.material.card.MaterialCardView>
 
-
-
-
-
-
-
-
-        </com.google.android.material.card.MaterialCardView>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
-            android:layout_height="211dp"
-            android:text="TextView" />
+            android:layout_height="31dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="25dp"
+            android:text="Nutrition"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="58dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-40dp"
+            app:srcCompat="@drawable/img_1" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="201dp"
+            android:layout_marginLeft="55dp"
+
+            android:layout_marginTop="-10dp"
+            android:gravity="right|fill_horizontal"
+            android:text="     Opt for high-quality dog food suitable for the dog's life stage (puppy, adult, or senior) to ensure proper nutrition.\n
+    Monitor calorie intake and weight to prevent obesity, a concern for some Golden Retrievers.\n
+    Use treats in moderation, considering their role in training, and avoid excess to prevent obesity.\n
+    Limit or avoid table scraps, especially those with cooked bones or high fat content.\n
+    Familiarize yourself with safe and unsafe human foods for dogs.\n
+    Consult your vet for concerns regarding your dog's weight or diet." />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="52dp"
+            android:layout_height="104dp"
+            app:srcCompat="@drawable/img_2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:textStyle="bold"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-66dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="0dp"
+
+            android:text="    Golden Retrievers, like most Sporting breeds, require ample daily exercise.\n
+    Insufficient exercise may lead to undesirable behavior in Goldens.\n
+    They are suitable companions for long runs and bike rides.\n
+    Consultation with a vet is advised before engaging in strenuous activities that may stress bones and joints.\n
+    Goldens can get exercise through hunting trips, field trials, and participation in canine sports like agility, obedience, and tracking." />
+
+
+
+
+
+
+
+
+
+
+
 
     </LinearLayout>
 
