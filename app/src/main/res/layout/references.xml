@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -29,11 +28,31 @@
         android:layout_centerHorizontal="false" />
 
     <TextView
+        android:id="@+id/ReferencesFinancialBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial"
+        android:layout_below="@+id/PetFirstAid"
+        android:textSize="20sp"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="false" />
+
+    <TextView
         android:id="@+id/PetPoisonControl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/petpoisoncontrol"
         android:layout_below="@+id/ReferencesMedicalBanner"
+        android:textSize="15sp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="false" />
+
+    <TextView
+        android:id="@+id/PetFirstAid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/petfirstaid"
+        android:layout_below="@+id/PetPoisonControl"
         android:textSize="15sp"
         android:layout_marginTop="10dp"
         android:layout_centerHorizontal="false" />
