@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:paddingLeft="25dp"
     android:paddingRight="25dp"
-    android:background="##ede9e8"
     tools:context=".References">
 
     <TextView
