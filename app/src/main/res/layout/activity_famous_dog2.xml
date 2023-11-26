@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".famous_dog_2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Famous dogs!"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+
+Lassie, a fictional Rough Collie, is known for her intelligence and loyalty. Originating from Eric Knight's 'Lassie Come-Home,' she's famous for her sable and white coat and heroism in movies and TV shows, often depicted rescuing people and showcasing the ideal of a faithful, heroic dog."
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/famous_dog_1_describe"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: Rough Collie"
+        android:id="@+id/famous_dog_1_describe"
+        android:layout_below="@id/famous_dog_2"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="300dp"
+        android:text="Next"
+        android:id="@+id/nextbtn"/>
+
+    <ImageView
+        android:id="@+id/famous_dog_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/famous_dog_2"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="190dp"
+        android:text="Previous"
+        android:id="@+id/previousbtn"/>
+
+
+</RelativeLayout>
