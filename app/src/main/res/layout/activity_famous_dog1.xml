@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".famous_dog_1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Famous dogs!"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/famous_dog_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/famous_dog_1"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+Toto, the Cairn Terrier from 'The Wizard of Oz,' is small, sturdy, and shaggy-coated, typically brindle-colored. Known for being playful and alert, Toto is Dorothy's loyal pet, accompanying her on her adventures in Oz. His endearing personality makes him a beloved character in this classic tale."
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/famous_dog_1_describe"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: cairn terrier"
+        android:id="@+id/famous_dog_1_describe"
+        android:layout_below="@id/famous_dog_1"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="300dp"
+        android:text="Next"
+        android:id="@+id/nextbtn"/>
+
+
+</RelativeLayout>

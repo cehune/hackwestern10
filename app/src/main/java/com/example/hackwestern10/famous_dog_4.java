@@ -7,27 +7,28 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class see_description extends AppCompatActivity {
+public class famous_dog_4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_see_description);
+        setContentView(R.layout.activity_famous_dog4);
 
-        Button back = findViewById(R.id.back_icon);
-        Button see_more = findViewById(R.id.see_allbtn);
+        Button back = findViewById(R.id.backbtn);
+        Button previous = findViewById(R.id.previous);
+
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(see_description.this, start_quiz_page.class);
+                Intent intent = new Intent(famous_dog_4.this, start_quiz_page.class);
                 startActivity(intent);
             }
         });
 
-        see_more.setOnClickListener(new View.OnClickListener() {
+        previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(see_description.this, famous_dog_1.class);
+                Intent intent = new Intent(famous_dog_4.this, famous_dog_3.class);
                 startActivity(intent);
             }
         });

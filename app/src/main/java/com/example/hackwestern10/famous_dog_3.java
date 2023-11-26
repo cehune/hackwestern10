@@ -2,32 +2,34 @@ package com.example.hackwestern10;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class see_description extends AppCompatActivity {
+public class famous_dog_3 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_see_description);
+        setContentView(R.layout.activity_famous_dog3);
 
-        Button back = findViewById(R.id.back_icon);
-        Button see_more = findViewById(R.id.see_allbtn);
-        back.setOnClickListener(new View.OnClickListener() {
+        Button next = findViewById(R.id.nextbtn);
+        Button previous = findViewById(R.id.previous);
+
+        next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(see_description.this, start_quiz_page.class);
+                Intent intent = new Intent(famous_dog_3.this, famous_dog_4.class);
                 startActivity(intent);
             }
         });
 
-        see_more.setOnClickListener(new View.OnClickListener() {
+        previous.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(see_description.this, famous_dog_1.class);
+                Intent intent = new Intent(famous_dog_3.this, famous_dog_2.class);
                 startActivity(intent);
             }
         });
