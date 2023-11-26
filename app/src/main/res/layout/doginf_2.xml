@@ -8,6 +8,7 @@
 
 
     <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -21,10 +22,11 @@
             android:id="@+id/back_button"/>
 
         <TextView
+            android:id="@+id/textDogBreed"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Golden Retriever"
+
             android:textColor="@color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -41,16 +43,15 @@
                 android:layout_marginTop="0dp"
                 android:padding="12dp">
 
+
                 <ImageView
                     android:id="@+id/dogPicture"
-                    android:layout_width="145dp"
-                    android:layout_height="131dp"
+                    android:layout_width="142dp"
+                    android:layout_height="146dp"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="239dp"
-                    android:layout_marginBottom="40dp"
-                    app:srcCompat="@drawable/img" />
-
+                    android:layout_marginEnd="242dp"
+                    android:layout_marginBottom="36dp" />
 
                 <TextView
                     android:id="@+id/textHeightTitle"
@@ -66,10 +67,13 @@
                     android:id="@+id/textHeightMale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="66dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="30dp"
+
+
                     android:text="" />
 
                 <TextView
@@ -77,9 +81,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textHeightMale"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="1dp"
-                    android:layout_marginEnd="27dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="6dp"
                     android:text="" />
 
                 <!-- Display weight information -->
@@ -90,7 +95,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/textHeightFemale"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="5dp"
+                    android:layout_marginTop="0dp"
                     android:layout_marginEnd="149dp"
                     android:text="Weight"
                     android:textSize="17sp"
@@ -101,11 +106,12 @@
                     android:layout_width="147dp"
                     android:layout_height="25dp"
                     android:layout_below="@+id/textWeightTitle"
-                    android:layout_alignBottom="@+id/imageView4"
+
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="63dp"
-                    android:layout_marginTop="-1dp"
-                    android:layout_marginEnd="33dp"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="0dp"
+
                     android:layout_marginBottom="23dp"
                     android:text="" />
 
@@ -113,10 +119,12 @@
                     android:id="@+id/textWeightFemale"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="42dp"
-                    android:layout_marginBottom="52dp"
+                    android:layout_marginStart="150dp"
+
+                    android:layout_marginBottom="49dp"
                     android:text="" />
 
                 <!-- Display life expectancy information -->
@@ -137,11 +145,13 @@
                     android:id="@+id/textLifeExpectancy"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="168dp"
-                    android:layout_marginEnd="105dp"
-                    android:text="10-12 years" />
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="171dp"
+
+                    android:text="" />
 
 
                 </RelativeLayout>
@@ -161,15 +171,16 @@
 
         <ImageView
             android:id="@+id/imageView3"
+
             android:layout_width="58dp"
             android:layout_height="45dp"
             android:layout_marginTop="-40dp"
-            app:srcCompat="@drawable/img_1" />
+            app:srcCompat="@drawable/doginfo1" />
 
         <TextView
             android:id="@+id/nutrition"
             android:layout_width="wrap_content"
-            android:layout_height="201dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
 
             android:layout_marginTop="-10dp"
@@ -180,7 +191,7 @@
             android:id="@+id/imageView5"
             android:layout_width="52dp"
             android:layout_height="104dp"
-            app:srcCompat="@drawable/img_2" />
+            app:srcCompat="@drawable/doginfo2" />
 
         <TextView
             android:id="@+id/exerciseTitle"
@@ -198,17 +209,34 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="55dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="6dp"
 
             android:text="" />
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="Grooming"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
 
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="-36dp"
+            app:srcCompat="@drawable/doginfo7"
+            />
 
-
-
-
-
-
+        <TextView
+            android:id ="@+id/grooming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="7dp"
+            android:text="" />
 
 
 
