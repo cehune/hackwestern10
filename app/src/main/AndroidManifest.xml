@@ -32,6 +32,12 @@
             android:exported="false" />
         <activity
             android:name=".start_quiz_page"
+ android:exported="false" />
+       <activity
+            android:name=".DogInf_2"
+            android:exported="false" />
+        <activity
+            android:name=".DogInf_1"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

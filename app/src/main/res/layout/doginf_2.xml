@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DogInf_2">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="15dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="return"
+            android:id="@+id/back_button"/>
+
+        <TextView
+            android:id="@+id/textDogBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_marginTop="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="213dp"
+                android:layout_marginTop="0dp"
+                android:padding="12dp">
+
+
+                <ImageView
+                    android:id="@+id/dogPicture"
+                    android:layout_width="142dp"
+                    android:layout_height="146dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="242dp"
+                    android:layout_marginBottom="36dp" />
+
+                <TextView
+                    android:id="@+id/textHeightTitle"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="115dp"
+                    android:text="Height"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textHeightMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="30dp"
+
+
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textHeightFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textHeightMale"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="6dp"
+                    android:text="" />
+
+                <!-- Display weight information -->
+
+                <TextView
+                    android:id="@+id/textWeightTitle"
+                    android:layout_width="77dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textHeightFemale"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="149dp"
+                    android:text="Weight"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textWeightMale"
+                    android:layout_width="147dp"
+                    android:layout_height="25dp"
+                    android:layout_below="@+id/textWeightTitle"
+
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="0dp"
+
+                    android:layout_marginBottom="23dp"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/textWeightFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="150dp"
+
+                    android:layout_marginBottom="49dp"
+                    android:text="" />
+
+                <!-- Display life expectancy information -->
+
+                <TextView
+                    android:id="@+id/textLifeExpectancyTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="95dp"
+                    android:layout_marginBottom="21dp"
+                    android:text="Life Expectancy"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textLifeExpectancy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="171dp"
+
+                    android:text="" />
+
+
+                </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="25dp"
+            android:text="Nutrition"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+
+            android:layout_width="58dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="-40dp"
+            app:srcCompat="@drawable/doginfo1" />
+
+        <TextView
+            android:id="@+id/nutrition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+
+            android:layout_marginTop="-10dp"
+            android:gravity="right|fill_horizontal"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="52dp"
+            android:layout_height="104dp"
+            app:srcCompat="@drawable/doginfo2" />
+
+        <TextView
+            android:id="@+id/exerciseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise"
+            android:textStyle="bold"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-66dp"
+
+            />
+
+        <TextView
+            android:id="@+id/exercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="6dp"
+
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="Grooming"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="-36dp"
+            app:srcCompat="@drawable/doginfo7"
+            />
+
+        <TextView
+            android:id ="@+id/grooming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="7dp"
+            android:text="" />
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>
