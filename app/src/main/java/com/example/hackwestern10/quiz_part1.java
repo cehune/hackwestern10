@@ -109,12 +109,14 @@ public class quiz_part1 extends AppCompatActivity implements View.OnClickListene
             finalresult = "extroversion";
         } else if (score >= 50) {
             finalresult = "agreeableness";
-        } else if (score >= 35) {
+        } else if (score >= 45) {
             finalresult = "neuroticism";
-        } else if (score >= 20){
+        } else if (score >= 40){
             finalresult = "openness";
-        } else {
+        } else if (score >= 35) {
             finalresult = "conscientiousness";
+        } else {
+            finalresult = "error";
         }
 
         new AlertDialog.Builder(this)
