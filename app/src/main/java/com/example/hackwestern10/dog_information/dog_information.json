@@ -1,5 +1,6 @@
 {
     "golden_retriever": {
+        "dog_breed": "Golden Retriever",
         "height_male": "Male: 23-24 inches",
         "height_female": "Female: 21.5-22.5 inches",
         "weight_male": "Male: 65-75 pounds",
