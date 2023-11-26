@@ -4,5 +4,15 @@
     <string name="petfirstaid"><a href="https://www.preventivevet.com/pet-first-aid-and-cpr">Pet first aid and CPR</a></string>
     <string name="financialhelpvet"><a href="https://www.preventivevet.com/financial-assistance-for-veterinary-care">Financial help for veterinary care</a></string>
     <string name="pottytrainingguide"><a href="https://www.preventivevet.com/best-products-for-potty-training-puppies">Best potty training products</a></string>
+    <string name="decodingdoglanguage"><a href="https://www.preventivevet.com/dog-training-recommended-resources-dog-body-language-decoders">Decoding dog body language</a></string>
+    <string name="hotdogcar"><a href="https://www.preventivevet.com/hot-happens-fast">Found a dog in a hot car</a></string>
+    <string name="treatmentauthform"><a href="https://www.preventivevet.com/pets/pet-sitter-treatment-authorization">Pet treatment authorization</a></string>
+    <string name="pettravelguide"><a href="https://www.preventivevet.com/dog-helpful-resources">Pet travel guide</a></string>
+    <string name="nippingguide"><a href="https://www.preventivevet.com/best-products-for-nipping-and-teething-puppies">Best nipping/teething products</a></string>
+    <string name="references">References</string>
+    <string name="medicalemergencies">Medical Emergencies</string>
+    <string name="pettrainingresources">Pet Training Resources</string>
+    <string name="financial">Financial</string>
+
 
 </resources>
