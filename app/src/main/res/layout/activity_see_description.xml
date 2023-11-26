@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".see_description">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Results!"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="146dp"
+        android:layout_height="137dp"
+        app:srcCompat="@drawable/agreeableness"
+        android:layout_marginTop="190dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="142dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/neuroticism"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="132dp"
+        android:layout_height="137dp"
+        app:srcCompat="@drawable/openness"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="141dp"
+        android:layout_height="139dp"
+        app:srcCompat="@drawable/conscientiousness"
+        android:layout_marginTop="530dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="140dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        app:srcCompat="@drawable/happy" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="310dp"
+        android:id="@+id/back_icon"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="200dp"
+        android:text="Extroversion:\nsociable and outgoing"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginStart="200dp"
+        android:text="Agreeablenes:\ntrustworthy and straightforward"
+        android:textSize="15dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="200dp"
+        android:text="Neuroticism:\nanxious, irritable, and shy"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="470dp"
+        android:layout_marginStart="200dp"
+        android:text="Openness:\ncurious, imaginative and excitable"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="580dp"
+        android:layout_marginStart="200dp"
+        android:text="Conscientiousness:\nefficient, thorough, and not lazy"
+        android:textSize="15dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="200dp"
+        android:text="See more"
+        android:id="@+id/see_allbtn"/>
+
+
+</RelativeLayout>
