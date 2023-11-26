@@ -1,4 +1,4 @@
-# hackwestern10
+# Play Pals
 Android app of digital community for dog owners for Hack Western 10 
 
 Created by [McKale Chung](https://github.com/mckalechung), [Janet Pham](https://github.com/janetPham), [Cecilia Zhang](https://github.com/ceciliazyy), and [Xinyi Ye]https://github.com/XinyiYe17
