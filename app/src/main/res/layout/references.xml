@@ -3,141 +3,157 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="25dp"
-    android:paddingRight="25dp"
     tools:context=".References">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_references"/>
 
-    <TextView
-        android:id="@+id/ReferencesText"
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/references"
-        android:textSize="30sp"
-        android:layout_marginTop="50dp"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        android:id="@+id/ReferencesMedicalBanner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/medicalemergencies"
-        android:layout_below="@+id/ReferencesText"
-        android:textSize="20sp"
-        android:layout_marginTop="60dp"
-        android:layout_centerHorizontal="false" />
-
-    <TextView
-        android:id="@+id/ReferencesTrainingBanner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pettrainingresources"
-        android:layout_below="@+id/FinancialHelpVet"
-        android:textSize="20sp"
-        android:layout_marginTop="60dp"
-        android:layout_centerHorizontal="false" />
-
-    <TextView
-        android:id="@+id/ReferencesFinancialBanner"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/financial"
-        android:layout_below="@+id/PetFirstAid"
-        android:textSize="20sp"
-        android:layout_marginTop="60dp"
-        android:layout_centerHorizontal="false" />
-
-    <TextView
-        android:id="@+id/PetPoisonControl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/petpoisoncontrol"
-        android:layout_below="@+id/ReferencesMedicalBanner"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
-
-    <TextView
-        android:id="@+id/PetFirstAid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/petfirstaid"
-        android:layout_below="@+id/PetPoisonControl"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
-
-    <TextView
-        android:id="@+id/FinancialHelpVet"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/financialhelpvet"
-        android:layout_below="@+id/ReferencesFinancialBanner"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
-
-    <TextView
-        android:id="@+id/PottyTrainingGuide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pottytrainingguide"
-        android:layout_below="@+id/ReferencesTrainingBanner"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
-
-    <TextView
-        android:id="@+id/nippingproducts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nippingguide"
-        android:layout_below="@+id/PottyTrainingGuide"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
+        android:layout_centerInParent="true"
+        android:background="@color/cardview_light_background"
+        android:paddingLeft="50dp"
+        android:paddingTop="25dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="25dp">
 
 
-    <TextView
-        android:id="@+id/pettravelguide"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/pettravelguide"
-        android:layout_below="@+id/nippingproducts"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
+        <TextView
+            android:id="@+id/ReferencesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:includeFontPadding="false"
+            android:text="@string/references"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/treatmentauthform"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/treatmentauthform"
-        android:layout_below="@+id/FinancialHelpVet"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
+        <TextView
+            android:id="@+id/ReferencesMedicalBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReferencesText"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="60dp"
+            android:text="@string/medicalemergencies"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/hotdogcar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hotdogcar"
-        android:layout_below="@+id/PetFirstAid"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
+        <TextView
+            android:id="@+id/ReferencesTrainingBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FinancialHelpVet"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="60dp"
+            android:text="@string/pettrainingresources"
+            android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/decodingdoglanguage"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/decodingdoglanguage"
-        android:layout_below="@+id/pettravelguide"
-        android:textSize="15sp"
-        android:layout_marginTop="10dp"
-        android:layout_centerHorizontal="false" />
+        <TextView
+            android:id="@+id/ReferencesFinancialBanner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PetFirstAid"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="60dp"
+            android:text="@string/financial"
+            android:textSize="20sp" />
 
+        <TextView
+            android:id="@+id/PetPoisonControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReferencesMedicalBanner"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/petpoisoncontrol"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/PetFirstAid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PetPoisonControl"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/petfirstaid"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/FinancialHelpVet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReferencesFinancialBanner"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/financialhelpvet"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/PottyTrainingGuide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ReferencesTrainingBanner"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/pottytrainingguide"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/nippingproducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PottyTrainingGuide"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/nippingguide"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/pettravelguide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nippingproducts"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/pettravelguide"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/treatmentauthform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FinancialHelpVet"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/treatmentauthform"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/hotdogcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/PetFirstAid"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/hotdogcar"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/decodingdoglanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pettravelguide"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="10dp"
+            android:text="@string/decodingdoglanguage"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
