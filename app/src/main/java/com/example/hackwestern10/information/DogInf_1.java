@@ -9,7 +9,11 @@ import android.widget.Button;
 
 import androidx.appcompat.widget.SearchView;
 
+
+import com.example.hackwestern10.MapActivity;
 import com.example.hackwestern10.R;
+import com.example.hackwestern10.quiz.start_quiz_page;
+import com.example.hackwestern10.references.References;
 
 
 public class DogInf_1 extends AppCompatActivity {
@@ -18,7 +22,8 @@ public class DogInf_1 extends AppCompatActivity {
     private Button button_beagle;
     private Button button_German_Shepherd;
     private SearchView search_dog;
-
+    private Button footerbtn_info, footerbtn_map, footerbtn_quiz, footerbtn_ref;
+    int user_id;
 
     private String Doglist[]
             = { "golden r", "hairy",
@@ -34,7 +39,7 @@ public class DogInf_1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.doginf_1);
-
+        user_id = getIntent().getIntExtra("id", 0);
         button_golden = (Button) findViewById(R.id.button_golden);
         button_golden.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -72,47 +77,49 @@ public class DogInf_1 extends AppCompatActivity {
             }
         });
 
-
-        /*
-        search_dog = findViewById(R.id.search_dog);
-
-        search_dog.clearFocus();
-
-        search_dog.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+        footerbtn_info = findViewById(R.id.btn_start_info_activity);
+        footerbtn_map = findViewById(R.id.btn_start_map_activity);
+        footerbtn_quiz = findViewById(R.id.btn_start_quiz_activity);
+        footerbtn_ref = findViewById(R.id.btn_start_ref_activity);
+        footerbtn_info.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextSubmit(String query) {
-                return false;
+            public void onClick(View v) {
+
             }
-
+        });
+        footerbtn_map.setOnClickListener(new View.OnClickListener() {
             @Override
-            public boolean onQueryTextChange(String newText) {
-                filterList(newText);
-                return true;
+            public void onClick(View v) {
+                Intent intent1 = new Intent(DogInf_1.this.getApplication(), MapActivity.class);
+                intent1.putExtra("id", user_id);
+                startActivity(intent1);
+            }
+        });
+        footerbtn_quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(DogInf_1.this.getApplication(), start_quiz_page.class);
+                intent1.putExtra("id", user_id);
+                startActivity(intent1);
+            }
+        });
+        footerbtn_ref.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(DogInf_1.this.getApplication(), References.class);
+                intent1.putExtra("id", user_id);
+                startActivity(intent1);
             }
         });
 
-    }
 
-    private void filterList(String text) {
-        List<String> filteredList = new ArrayList<>();
-        for(String item : Doglist){
-            if(item.contains(text.toLowerCase())){
-                filteredList.add(item);
-            }
-        }
-
-        if(filteredList.isEmpty() ){
-            Toast.makeText(this, "No Such Dog Brand Found", Toast.LENGTH_SHORT).show();
-        }else{
-            // to do, need item adaptor.
-        }
-*/
 
     }
 
     public void open_MainActivity2(String key) {
             Intent intent1 = new Intent(this, DogInf_2.class);
             intent1.putExtra("breed", key);
+            intent1.putExtra("id", user_id);
             startActivity(intent1);
 
 

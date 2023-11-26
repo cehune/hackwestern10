@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register.register_activity">
+    tools:context=".register.second_register">
 
     <View
         android:id="@+id/view2"
@@ -51,7 +51,7 @@
         </RelativeLayout>
 
         <EditText
-            android:id="@+id/editTextUsername"
+            android:id="@+id/editDogName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -59,10 +59,10 @@
             android:layout_marginRight="25dp"
             android:textSize="20dp"
             android:inputType="text"
-            android:hint="Username" />
+            android:hint="your dogs name" />
 
         <EditText
-            android:id="@+id/editTextEmail"
+            android:id="@+id/editDogBreed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -70,10 +70,10 @@
             android:layout_marginRight="25dp"
             android:textSize="20dp"
             android:inputType="text"
-            android:hint="Email" />
+            android:hint="your dogs breed" />
 
         <EditText
-            android:id="@+id/editTextPassword"
+            android:id="@+id/editDogAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="25dp"
@@ -81,7 +81,7 @@
             android:layout_marginRight="25dp"
             android:textSize="20dp"
             android:inputType="text"
-            android:hint="Password" />
+            android:hint="Your dogs age" />
 
         />
 

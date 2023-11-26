@@ -1,4 +1,4 @@
-package com.example.hackwestern10.dog_information;
+package com.example.hackwestern10.information.dog_information;
 
 public class DogInformationSingle {
     private String dog_breed;

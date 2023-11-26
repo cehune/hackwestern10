@@ -1,4 +1,4 @@
-package com.example.hackwestern10.dog_information;
+package com.example.hackwestern10.information.dog_information;
 
 
 import com.example.hackwestern10.R;

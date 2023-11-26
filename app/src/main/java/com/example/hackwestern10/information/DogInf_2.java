@@ -1,30 +1,33 @@
 package com.example.hackwestern10.information;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.hackwestern10.MapActivity;
 import com.example.hackwestern10.R;
-import com.example.hackwestern10.dog_information.DogInformationBase;
-import com.example.hackwestern10.dog_information.DogInformationSingle;
+import com.example.hackwestern10.information.dog_information.DogInformationBase;
+import com.example.hackwestern10.information.dog_information.DogInformationSingle;
+import com.example.hackwestern10.quiz.start_quiz_page;
+import com.example.hackwestern10.references.References;
 
 public class DogInf_2 extends AppCompatActivity {
 
     Button back_button;
     ImageView dogPicture;
     TextView dogbreed, heightMale, heightFemale, weightMale, weightFemale, lifeExpectancy, nutrition, exercise, grooming;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.doginf_2);
         String breed = getIntent().getStringExtra("breed");
+
         DogInformationBase dogInformationBase =  new DogInformationBase();
 
         DogInformationSingle dog;
@@ -67,6 +70,7 @@ public class DogInf_2 extends AppCompatActivity {
         exercise.setText(dog.getExercise());
         grooming.setText(dog.getGrooming());
         dogPicture.setBackgroundResource(dog.getPicture());
+
 
 
 

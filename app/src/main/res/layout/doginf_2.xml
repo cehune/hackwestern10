@@ -238,9 +238,7 @@
             android:layout_marginTop="7dp"
             android:text="" />
 
-
-
-
     </LinearLayout>
+
 
 </ScrollView>

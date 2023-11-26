@@ -12,7 +12,10 @@ import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.hackwestern10.MapActivity;
 import com.example.hackwestern10.R;
+import com.example.hackwestern10.information.DogInf_1;
+import com.example.hackwestern10.references.References;
 
 public class quiz_part1 extends AppCompatActivity implements View.OnClickListener{
 
@@ -20,6 +23,8 @@ public class quiz_part1 extends AppCompatActivity implements View.OnClickListene
     TextView QuestionTextView;
     Button ans_1, ans_2;
     Button submit_btn;
+    private Button footerbtn_info, footerbtn_map, footerbtn_quiz, footerbtn_ref;
+    int user_id;
 
     int score = 0;
     int totalQuestion = QuestionAnswer.question.length;
@@ -46,6 +51,44 @@ public class quiz_part1 extends AppCompatActivity implements View.OnClickListene
         totalQuestionsTextView.setText("Total Question : " + totalQuestion);
 
         loadNewQuestion();
+
+
+        footerbtn_info = findViewById(R.id.btn_start_info_activity);
+        footerbtn_map = findViewById(R.id.btn_start_map_activity);
+        footerbtn_quiz = findViewById(R.id.btn_start_quiz_activity);
+        footerbtn_ref = findViewById(R.id.btn_start_ref_activity);
+        footerbtn_info.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(quiz_part1.this.getApplication(), DogInf_1.class);
+                intent1.putExtra("id", user_id);
+                startActivity(intent1);
+            }
+        });
+        footerbtn_map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(quiz_part1.this.getApplication(), MapActivity.class);
+                intent1.putExtra("id", user_id);
+                startActivity(intent1);
+            }
+        });
+        footerbtn_quiz.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(quiz_part1.this.getApplication(), start_quiz_page.class);
+                intent1.putExtra("id", user_id);
+                startActivity(intent1);
+            }
+        });
+        footerbtn_ref.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(quiz_part1.this.getApplication(), References.class);
+                intent1.putExtra("id", user_id);
+                startActivity(intent1);
+            }
+        });
 
     }
 
