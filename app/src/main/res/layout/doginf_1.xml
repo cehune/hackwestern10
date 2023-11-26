@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DogInf_1">
+    tools:context=".information.DogInf_1">
 
     <Button
         android:id="@+id/button_golden"
@@ -103,6 +103,14 @@
         android:layout_marginEnd="38dp"
         android:layout_marginBottom="247dp"
         android:text="German Shepherd " />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
 
 
 </RelativeLayout>

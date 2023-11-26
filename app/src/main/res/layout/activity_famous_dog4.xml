@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".famous_dog_4">
+    tools:context=".quiz.famous_dog_4">
 
     <ImageView
         android:id="@+id/famous_dog_4"

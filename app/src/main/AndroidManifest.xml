@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,32 +16,44 @@
         android:theme="@style/Theme.Hackwestern10"
         tools:targetApi="31">
         <activity
-            android:name=".famous_dog_4"
+            android:name=".references.References"
             android:exported="false" />
         <activity
-            android:name=".famous_dog_3"
+            android:name=".MapActivity"
             android:exported="false" />
         <activity
-            android:name=".famous_dog_2"
+            android:name=".register.second_register"
             android:exported="false" />
         <activity
-            android:name=".famous_dog_1"
+            android:name=".quiz.famous_dog_4"
             android:exported="false" />
         <activity
-            android:name=".see_description"
+            android:name=".quiz.famous_dog_3"
             android:exported="false" />
         <activity
-            android:name=".quiz_part1"
+            android:name=".quiz.famous_dog_2"
             android:exported="false" />
         <activity
-            android:name=".start_quiz_page"
- android:exported="false" />
-       <activity
-            android:name=".DogInf_2"
+            android:name=".quiz.famous_dog_1"
             android:exported="false" />
         <activity
-            android:name=".References"
-            android:exported="true" >
+            android:name=".quiz.see_description"
+            android:exported="false" />
+        <activity
+            android:name=".quiz.quiz_part1"
+            android:exported="false" />
+        <activity
+            android:name=".quiz.start_quiz_page"
+            android:exported="false" />
+        <activity
+            android:name=".information.DogInf_2"
+            android:exported="false" />
+        <activity
+            android:name=".register.register_activity"
+            android:exported="false" />
+        <activity
+            android:name=".register.splash_activity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,9 +61,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".DogInf_1"
-            android:exported="true"/>
-
+            android:name=".information.DogInf_1"
+            android:exported="true" />
     </application>
 
 </manifest>

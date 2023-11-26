@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".register_activity">
+    tools:context=".register.register_activity">
 
     <View
         android:id="@+id/view2"
@@ -59,7 +59,7 @@
             android:layout_marginRight="25dp"
             android:textSize="20dp"
             android:inputType="text"
-            android:text="Username" />
+            android:hint="Username" />
 
         <EditText
             android:id="@+id/editTextEmail"
@@ -70,7 +70,7 @@
             android:layout_marginRight="25dp"
             android:textSize="20dp"
             android:inputType="text"
-            android:text="Email" />
+            android:hint="Email" />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -81,7 +81,7 @@
             android:layout_marginRight="25dp"
             android:textSize="20dp"
             android:inputType="text"
-            android:text="Password" />
+            android:hint="Password" />
 
         />
 
@@ -99,7 +99,7 @@
         app:srcCompat="@drawable/dog" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/registersubmit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Submit"
