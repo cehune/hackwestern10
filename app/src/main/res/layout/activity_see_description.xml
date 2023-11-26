@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".see_description">
+    tools:context=".quiz.see_description">
 
     <TextView
         android:layout_width="wrap_content"

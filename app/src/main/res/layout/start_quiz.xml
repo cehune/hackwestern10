@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".start_quiz_page">
+    tools:context=".quiz.start_quiz_page">
 
     <ImageView
         android:layout_width="wrap_content"

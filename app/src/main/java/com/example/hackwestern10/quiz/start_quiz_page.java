@@ -1,4 +1,4 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import java.util.Scanner;
+import com.example.hackwestern10.R;
 
 public class start_quiz_page extends AppCompatActivity {
 

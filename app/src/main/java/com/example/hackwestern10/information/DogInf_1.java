@@ -1,16 +1,15 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.information;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ClipData;
 import android.os.Bundle;
 import android.view.View;
 import android.content.Intent;
 import android.widget.Button;
-import android.widget.Toast;
+
 import androidx.appcompat.widget.SearchView;
-import java.util.ArrayList;
-import java.util.List;
+
+import com.example.hackwestern10.R;
 
 
 public class DogInf_1 extends AppCompatActivity {

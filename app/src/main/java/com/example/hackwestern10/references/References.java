@@ -1,4 +1,4 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.references;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,8 @@ import android.graphics.Paint;
 import android.os.Bundle;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
+
+import com.example.hackwestern10.R;
 
 public class References extends AppCompatActivity {
 

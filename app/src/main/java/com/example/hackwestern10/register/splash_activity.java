@@ -1,9 +1,11 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.register;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.content.Intent;
+
+import com.example.hackwestern10.R;
 
 public class splash_activity extends AppCompatActivity {
 

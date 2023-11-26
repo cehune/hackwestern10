@@ -1,4 +1,4 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.information;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBar;
@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.hackwestern10.R;
 import com.example.hackwestern10.dog_information.DogInformationBase;
 import com.example.hackwestern10.dog_information.DogInformationSingle;
 

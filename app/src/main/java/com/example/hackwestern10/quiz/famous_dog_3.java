@@ -1,4 +1,4 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.quiz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.example.hackwestern10.R;
 
 public class famous_dog_3 extends AppCompatActivity {
 

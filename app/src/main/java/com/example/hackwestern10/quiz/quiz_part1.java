@@ -1,9 +1,8 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.quiz;
 import android.app.AlertDialog;
 import android.graphics.Color;
 import android.os.Bundle;
 
-import android.speech.AlternativeSpan;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,17 +12,6 @@ import android.content.Intent;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.AlertDialog;
-import android.graphics.Color;
-import android.os.Bundle;
-
-import android.speech.AlternativeSpan;
-import android.view.View;
-import android.widget.TextView;
-
-import android.widget.Button;
-
-import com.example.hackwestern10.QuestionAnswer;
 import com.example.hackwestern10.R;
 
 public class quiz_part1 extends AppCompatActivity implements View.OnClickListener{

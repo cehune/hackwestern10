@@ -1,4 +1,4 @@
-package com.example.hackwestern10;
+package com.example.hackwestern10.quiz;
 
 public class QuestionAnswer {
 
