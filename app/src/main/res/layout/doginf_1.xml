@@ -7,13 +7,13 @@
     tools:context=".DogInf_1">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_golden"
         android:layout_width="240dp"
         android:layout_height="70dp"
         android:layout_above="@+id/imageView"
         android:layout_alignParentEnd="true"
-        android:layout_marginEnd="33dp"
-        android:layout_marginBottom="-82dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="-70dp"
         android:text="Golden Retriever"
         tools:layout_editor_absoluteX="146dp"
         tools:layout_editor_absoluteY="70dp" />
@@ -24,10 +24,85 @@
         android:layout_height="96dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="281dp"
-        android:layout_marginBottom="563dp"
-        app:srcCompat="@drawable/img"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="576dp"
+        app:srcCompat="@drawable/doginfo"
         tools:layout_editor_absoluteX="38dp"
         tools:layout_editor_absoluteY="58dp" />
+
+    <SearchView
+        android:id="@+id/search_dog"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginBottom="7dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="Search Dog Brand" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="196dp"
+        android:layout_height="148dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="429dp"
+        app:srcCompat="@drawable/doginfo4" />
+
+    <Button
+        android:id="@+id/button_chihuahua"
+        android:layout_width="178dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="58dp"
+        android:layout_marginBottom="472dp"
+        android:text="Chihuahua" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="124dp"
+        android:layout_height="317dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="265dp"
+        android:layout_marginBottom="234dp"
+        app:srcCompat="@drawable/doginfo5" />
+
+    <Button
+        android:id="@+id/button_beagle"
+        android:layout_width="184dp"
+        android:layout_height="71dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="53dp"
+        android:layout_marginBottom="358dp"
+        android:text="Beagle" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="133dp"
+        android:layout_height="226dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="261dp"
+        android:layout_marginBottom="181dp"
+        app:srcCompat="@drawable/doginfo6" />
+
+    <Button
+        android:id="@+id/button_German_Shepherd"
+        android:layout_width="205dp"
+        android:layout_height="75dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="247dp"
+        android:text="German Shepherd " />
+
 
 </RelativeLayout>

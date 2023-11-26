@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".famous_dog_4">
+
+    <ImageView
+        android:id="@+id/famous_dog_4"
+        android:layout_width="348dp"
+        android:layout_height="273dp"
+        app:srcCompat="@drawable/famous_dog_4"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="49dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Famous dogs!"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="
+
+Nemo was a German Shepherd who served as a war dog with the U.S. Air Force during the Vietnam War. He became famous for his bravery in combat, where he saved the life of his handler despite being seriously injured. Nemo's legacy highlights the valor and dedication of military working dogs."
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:layout_below="@id/famous_dog_1_describe"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type: Mixed Breed"
+        android:id="@+id/famous_dog_1_describe"
+        android:layout_below="@id/famous_dog_4"
+        android:textSize="25dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="300dp"
+        android:text="Back"
+        android:id="@+id/backbtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="680dp"
+        android:layout_marginStart="190dp"
+        android:id="@+id/previous"
+        android:text="Previous"
+        />
+</RelativeLayout>
